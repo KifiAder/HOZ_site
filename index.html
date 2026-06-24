@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7dedf" />
+  <title>Архив «Гостинной»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="На главную">
+        <span class="brand-mark">✧</span>
+        <span>
+          <strong>Архив «Гостинной»</strong>
+          <small>визуальное наследие чата</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#home" data-nav="home">Работы Забора</a>
+        <a href="#works" data-nav="works">Работы</a>
+      </nav>
+    </header>
+
+    <main id="app" class="page-content" tabindex="-1"></main>
+
+    <footer class="site-footer" id="siteFooter">
+      <div class="footer-line">
+        <span>Архив Гостинной • 2026 | KIFI</span>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">исходный репозиторий</a>
+      </div>
+      <div id="footerAction" class="footer-action" aria-live="polite"></div>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+    <img alt="Просмотр изображения" />
+    <p></p>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
